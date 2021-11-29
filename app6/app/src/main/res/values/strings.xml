@@ -8,4 +8,6 @@
     <string name="hours">Hours</string>
     <string name="information">Information</string>
     <string name="type">Type</string>
+    <string name="science_hall_sh">Science Hall SH</string>
+    <string name="building_hours">Building Hours:</string>
 </resources>

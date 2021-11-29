@@ -3,13 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Tiare/Downloads/app6/app/src/main/res/layout/activity_main.xml" value="0.16486486486486487" />
-        <entry key="..\:/Users/Tiare/Downloads/app6/app/src/main/res/layout/features.xml" value="0.16486486486486487" />
-        <entry key="..\:/Users/Tiare/Downloads/app6/app/src/main/res/layout/officeHours.xml" value="0.264" />
-        <entry key="..\:/Users/Tiare/Downloads/app6/app/src/main/res/layout/officehours.xml" value="0.22379032258064516" />
-        <entry key="..\:/Users/Tiare/Downloads/app6/app/src/main/res/layout/recycler_view_item.xml" value="0.25416666666666665" />
-        <entry key="..\:/Users/Tiare/Downloads/app6/app/src/main/res/layout/roomNumbers.xml" value="0.1" />
-        <entry key="..\:/Users/Tiare/Downloads/app6/app/src/main/res/layout/roomnumbers.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/gorel/Desktop/SchoolWork/app/app6/app/src/main/res/drawable-anydpi/clock.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/gorel/Desktop/SchoolWork/app/app6/app/src/main/res/drawable/gradientback.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/gorel/Desktop/SchoolWork/app/app6/app/src/main/res/drawable/ic_features_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/gorel/Desktop/SchoolWork/app/app6/app/src/main/res/drawable/ic_roomnumber_background.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/gorel/Desktop/SchoolWork/app/app6/app/src/main/res/drawable/ic_roomnumber_foreground.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/gorel/Desktop/SchoolWork/app/app6/app/src/main/res/layout/activity_2.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/gorel/Desktop/SchoolWork/app/app6/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/gorel/Desktop/SchoolWork/app/app6/app/src/main/res/layout/activity_office_num.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/gorel/Desktop/SchoolWork/app/app6/app/src/main/res/layout/activity_room_num.xml" value="0.20520833333333333" />
       </map>
     </option>
   </component>

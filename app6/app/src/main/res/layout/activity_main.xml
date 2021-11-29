@@ -1,49 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/gradientback">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="358dp"
-        android:layout_height="209dp"
-        android:layout_marginTop="108dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:itemCount="3"
-        tools:listitem="@layout/recycler_view_item" />
+    <TextView
+        android:id="@+id/building"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/science_hall_sh"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/school_darkgrey"
+        android:textSize="30sp"></TextView>
 
-    <Button
-        android:id="@+id/camera"
-        style="@style/Widget.AppCompat.ImageButton"
-        android:layout_width="89dp"
-        android:layout_height="93dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="232dp"
-        android:layout_marginTop="609dp"
-        android:layout_marginBottom="25dp"
-        android:background="@drawable/camera_icon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/setting"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="50dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/numbersgrey"
+        android:contentDescription="Number"
+        app:tint="@color/school_grey"
 
-    <Button
-        android:id="@+id/setting"
-        style="@style/Widget.AppCompat.ImageButton"
-        android:layout_width="87dp"
-        android:layout_height="93dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="25dp"
-        android:background="@drawable/setting_icon"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/camera"
-        app:layout_constraintStart_toStartOf="parent" />
+        />
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="50dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="210dp"
+        android:background="@drawable/clockgrey"
+        android:contentDescription="Number"
+        app:tint="@color/school_grey"
+
+        />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="50dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="95dp"
+        android:background="@drawable/featuresgrey"
+        android:contentDescription="Number"
+        app:tint="@color/school_grey"
+
+        />
+
+    <TextView
+        android:id="@+id/buildingHours"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/building"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:hint="@string/building_hours"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/school_darkgrey"
+        android:textSize="30sp">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/buildingHours"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/features"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Features"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:textColor="@color/school_grey"
+            app:backgroundTint="@color/school_darkgrey"></Button>
+
+        <Button
+
+            android:id="@+id/roomNumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Room Numbers"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:textColor="@color/school_grey"
+            app:backgroundTint="@color/school_darkgrey"></Button>
+
+        <Button
+
+            android:id="@+id/officeHours"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Office Hours"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="18sp"
+            android:textColor="@color/school_grey"
+            app:backgroundTint="@color/school_darkgrey"></Button>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
