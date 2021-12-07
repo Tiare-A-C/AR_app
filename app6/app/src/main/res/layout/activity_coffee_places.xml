@@ -5,31 +5,33 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
 
-<ImageView
-    android:id="@+id/imageView4"
-    android:layout_width="50dp"
-    android:layout_height="54dp"
-    android:layout_marginEnd="40dp"
-    android:layout_marginBottom="28dp"
-    android:background="@drawable/clock_icon"
-    android:contentDescription="Clock"
-    app:layout_constraintBottom_toTopOf="@+id/layout"
-    app:layout_constraintEnd_toStartOf="@+id/textView2"
-    tools:ignore="ImageContrastCheck"
-    tools:srcCompat="@drawable/clock_icon" />
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="50dp"
+        android:layout_height="54dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/ic_officehour_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/layout"
+        app:layout_constraintEnd_toStartOf="@+id/textView2"
+        tools:ignore="ImageContrastCheck" />
 
-<TextView
-    android:id="@+id/textView2"
-    android:layout_width="200dp"
-    android:layout_height="49dp"
-    android:layout_marginTop="16dp"
-    android:text="Office Hours"
-    android:textSize="35sp"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.5"
-    app:layout_constraintStart_toEndOf="@+id/imageView4"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="200dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="16dp"
+        android:text="Office Hours"
+        android:textSize="35sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 <ScrollView
     android:id="@+id/layout"
@@ -59,32 +61,32 @@
                     android:layout_column="1"
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="@string/name" />
+                    android:text="@string/name"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="@string/type" />
+                    android:text="@string/type"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="@string/location" />
+                    android:text="@string/location"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="@string/status" />
+                    android:text="@string/status"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="@string/hours" />
+                    android:text="@string/hours"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="@string/information" />
+                    android:text="@string/information"/>
             </TableRow>
 
             <TableRow>
@@ -93,32 +95,32 @@
                     android:layout_column="1"
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="Jesus" />
+                    android:text="Jesus"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="Teacher Assistant" />
+                    android:text="Teacher Assistant"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="Science Hall, RM 00" />
+                    android:text="Science Hall, RM 00"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="Available" />
+                    android:text="Available"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="10:30AM to 12:30PM" />
+                    android:text="10:30AM to 12:30PM"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="zoom meeting link" />
+                    android:text="zoom meeting link"/>
             </TableRow>
 
             <TableRow>
@@ -127,32 +129,32 @@
                     android:layout_column="1"
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="Professor Mac" />
+                    android:text="Professor Mac"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="Machine Prog" />
+                    android:text="Machine Prog"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="Science Hall, RM 800" />
+                    android:text="Science Hall, RM 800"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="Unavailable" />
+                    android:text="Unavailable"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="2PM to 4PM" />
+                    android:text="2PM to 4PM"/>
 
                 <TextView
                     android:gravity="center_horizontal"
                     android:padding="5dip"
-                    android:text="website link" />
+                    android:text="website link"/>
             </TableRow>
         </TableLayout>
     </HorizontalScrollView>

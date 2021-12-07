@@ -8,53 +8,61 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button features;
-    private Button officeNum;
-    private Button roomNum;
+    private Button buildings;
+    private Button lunchPlaces;
+    private Button coffeePlaces;
+    private Button qrcode;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        features = (Button) findViewById(R.id.features);
-        features.setOnClickListener(new View.OnClickListener() {
+        buildings = (Button) findViewById(R.id.buildings);
+        buildings.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) { BuildingsActivity(); }
+        });
+
+        lunchPlaces = (Button) findViewById(R.id.coffeePlaces);
+        lunchPlaces.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                FeaturesActivity();
+                LunchPlacesActivity();
             }
         });
 
-        officeNum = (Button) findViewById(R.id.officeHours);
-        officeNum.setOnClickListener(new View.OnClickListener() {
+        coffeePlaces = (Button) findViewById(R.id.lunchPlaces);
+        coffeePlaces.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                OfficeNumActivity();
+                CoffeePlacesActivity();
             }
         });
-
-        roomNum = (Button) findViewById(R.id.roomNumbers);
-        roomNum.setOnClickListener(new View.OnClickListener() {
+        qrcode = (Button) findViewById(R.id.qrcode);
+        qrcode.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                RoomNumActivity();
-            }
-        });
+            public void onClick(View view){QRCodeScanActivity();}
 
+        });
 
     }
-    public void FeaturesActivity(){
-        Intent intent = new Intent(this, FeaturesActivity.class);
+    public void BuildingsActivity(){
+        Intent intent = new Intent(this, BuildingsActivity.class);
         startActivity(intent);
     }
 
-    public void OfficeNumActivity(){
-        Intent intent = new Intent(this, OfficeNumActivity.class);
+    public void LunchPlacesActivity(){
+        Intent intent = new Intent(this, LunchPlacesActivity.class);
         startActivity(intent);
     }
 
-    public void RoomNumActivity(){
-        Intent intent = new Intent(this, RoomNumActivity.class);
+    public void CoffeePlacesActivity(){
+        Intent intent = new Intent(this, CoffeePlacesActivity.class);
+        startActivity(intent);
+    }
+    public void QRCodeScanActivity(){
+        Intent intent = new Intent(this, QRCodeScanActivity.class);
         startActivity(intent);
     }
 }

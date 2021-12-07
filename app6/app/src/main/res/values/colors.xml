@@ -7,8 +7,7 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-
-    <color name = "school_crim">#8c0b42</color>
+    <color name = "school_crimson">#8c0b42</color>
     <color name = "school_grey">#cccccc</color>
-    <color name = "school_darkgrey">#6d6e71</color>
+    <color name = "school_dark_grey">#6d6e71</color>
 </resources>

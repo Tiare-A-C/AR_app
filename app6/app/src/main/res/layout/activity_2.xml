@@ -3,164 +3,162 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:background="@color/school_darkgrey">
+    xmlns:tools="http://schemas.android.com/tools">
 
 
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="50dp"
-        android:layout_height="54dp"
-        android:layout_marginLeft="55dp"
-        android:layout_marginTop="3dp"
-        android:contentDescription="@string/star"
 
-        tools:ignore="ImageContrastCheck"
-        tools:srcCompat="@drawable/features" />
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="54dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/features_icon"
+            android:contentDescription="@string/star"
+            app:layout_constraintBottom_toTopOf="@+id/layout"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            tools:ignore="ImageContrastCheck"
+            tools:srcCompat="@drawable/features_icon" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="150dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginLeft="140dp"
-        android:layout_marginTop="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="1dp"
-        android:text="@string/features"
-        android:textSize="35sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1000"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="143dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/features"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
-        android:id="@+id/layout"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="100dip"
-        android:fillViewport="true"
-        android:scrollbarStyle="outsideInset"
-        android:scrollbars="horizontal|vertical">
-
-        <HorizontalScrollView
-            android:id="@+id/horizontalView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="5dip"
+        <ScrollView
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dip"
+            android:fillViewport="true"
+            android:scrollbarStyle="outsideInset"
             android:scrollbars="horizontal|vertical">
 
-            <TableLayout
+            <HorizontalScrollView
+                android:id="@+id/horizontalView"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginTop="0dp"
-                android:gravity="center_horizontal">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:scrollbars="horizontal|vertical">
 
-                <TableRow>
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="0dp"
+                    android:gravity="center_horizontal">
 
-                    <TextView
-                        android:layout_column="1"
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="@string/type" />
+                    <TableRow>
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="@string/name" />
+                        <TextView
+                            android:layout_column="1"
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="@string/type" />
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="@string/location" />
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="@string/name" />
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="@string/status" />
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="@string/location" />
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="@string/hours" />
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="@string/status" />
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="@string/information" />
-                </TableRow>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="@string/hours" />
 
-                <TableRow>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="@string/information" />
+                    </TableRow>
 
-                    <TextView
-                        android:layout_column="1"
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="Restaurant" />
+                    <TableRow>
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="Quick Bytes" />
+                        <TextView
+                            android:layout_column="1"
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="Restaurant" />
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="Science Hall, RM -256" />
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="Quick Bytes" />
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="Closed" />
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="Science Hall, RM -256" />
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="7AM to 7PM" />
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="Closed" />
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="no website or phone number" />
-                </TableRow>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="7AM to 7PM" />
 
-                <TableRow>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="no website or phone number" />
+                    </TableRow>
 
-                    <TextView
-                        android:layout_column="1"
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="Computer Lab" />
+                    <TableRow>
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="CS Lab" />
+                        <TextView
+                            android:layout_column="1"
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="Computer Lab" />
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="Science Hall, RM 118" />
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="CS Lab" />
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="Closed" />
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="Science Hall, RM 118" />
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="9AM to 8PM" />
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="Closed" />
 
-                    <TextView
-                        android:gravity="center_horizontal"
-                        android:padding="5dip"
-                        android:text="cs.nmsu.edu" />
-                </TableRow>
-            </TableLayout>
-        </HorizontalScrollView>
-    </ScrollView>
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="9AM to 8PM" />
+
+                        <TextView
+                            android:gravity="center_horizontal"
+                            android:padding="5dip"
+                            android:text="cs.nmsu.edu" />
+                    </TableRow>
+                </TableLayout>
+            </HorizontalScrollView>
+        </ScrollView>
 
         <androidx.constraintlayout.widget.Group
             android:id="@+id/group"

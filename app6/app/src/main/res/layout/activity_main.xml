@@ -3,111 +3,58 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradientback">
-
-    <TextView
-        android:id="@+id/building"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:hint="@string/science_hall_sh"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/school_darkgrey"
-        android:textSize="30sp"></TextView>
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="50dp"
-        android:layout_height="54dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="150dp"
-        android:background="@drawable/numbersgrey"
-        android:contentDescription="Number"
-        app:tint="@color/school_grey"
-
-        />
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="50dp"
-        android:layout_height="54dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="210dp"
-        android:background="@drawable/clockgrey"
-        android:contentDescription="Number"
-        app:tint="@color/school_grey"
-
-        />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="50dp"
-        android:layout_height="54dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="95dp"
-        android:background="@drawable/featuresgrey"
-        android:contentDescription="Number"
-        app:tint="@color/school_grey"
-
-        />
-
-    <TextView
-        android:id="@+id/buildingHours"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/building"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:hint="@string/building_hours"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="@color/school_darkgrey"
-        android:textSize="30sp">
-
-    </TextView>
+    android:background="@drawable/background">
 
     <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="600dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/buildingHours"
-        android:orientation="vertical"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_marginTop="121dp"
+        android:orientation="vertical">
 
         <Button
-            android:id="@+id/features"
+            android:id="@+id/buildings"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="Features"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Buildings"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="18sp"
-            android:textColor="@color/school_grey"
-            app:backgroundTint="@color/school_darkgrey"></Button>
+            android:textSize="20sp"></Button>
 
         <Button
 
-            android:id="@+id/roomNumbers"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Room Numbers"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="18sp"
-            android:textColor="@color/school_grey"
-            app:backgroundTint="@color/school_darkgrey"></Button>
-
-        <Button
-
-            android:id="@+id/officeHours"
+            android:id="@+id/lunchPlaces"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="Office Hours"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Lunch Places"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textSize="18sp"
-            android:textColor="@color/school_grey"
-            app:backgroundTint="@color/school_darkgrey"></Button>
+            android:textSize="20sp"></Button>
 
+        <Button
 
+            android:id="@+id/coffeePlaces"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Coffee Places"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textSize="20sp"></Button>
+
+        <Button
+
+            android:id="@+id/qrcode"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="404dp"
+            android:background="@drawable/qrcode"></Button>
 
 
     </LinearLayout>
